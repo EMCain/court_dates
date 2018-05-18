@@ -10,7 +10,7 @@
   "model": "api.question",
   "pk": 2,
   "fields": {
-    "text": "Call {} for an interpeter."
+    "text": "Call 503-986-4521 for an interpeter."
   }
 },
 {
@@ -24,7 +24,7 @@
   "model": "api.question",
   "pk": 4,
   "fields": {
-    "text": "Call {} to find out your court date."
+    "text": "Call 503-988-3957 to find out your court date."
   }
 },
 {
@@ -32,6 +32,27 @@
   "pk": 5,
   "fields": {
     "text": "How will you be getting to court?"
+  }
+},
+{
+  "model": "api.question",
+  "pk": 6,
+  "fields": {
+    "text": "Parking downtown can be difficult. Please read the information at <a href=\"https://www.portlandoregon.gov/transportation/34782\">this link</a> and plan on arriving downtown 1 hour before your court appointment.<br>Consider downloading the Parking Kitty app if you have a smartphone, so you can renew your parking if court times run over."
+  }
+},
+{
+  "model": "api.question",
+  "pk": 7,
+  "fields": {
+    "text": "See the Trimet website's <a href=\"https://trimet.org/#/planner\">Trip Planner</a> page. Please plan on arriving at the courthouse 45 minutes before your appointment."
+  }
+},
+{
+  "model": "api.question",
+  "pk": 8,
+  "fields": {
+    "text": "Call Central City Concern at (503) 294-1681 for information on free bus passes and other transportation options."
   }
 },
 {
@@ -63,11 +84,38 @@
 },
 {
   "model": "api.answer",
-  "pk": 4,
+  "pk": 3,
   "fields": {
     "question": 3,
     "text": "no",
     "next_question": 4
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 5,
+  "fields": {
+    "question": 5,
+    "text": "car",
+    "next_question": 6
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 6,
+  "fields": {
+    "question": 5,
+    "text": "TriMet",
+    "next_question": 7
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 4,
+  "fields": {
+    "question": 5,
+    "text": "don't know",
+    "next_question": 8
   }
 }
 ]
