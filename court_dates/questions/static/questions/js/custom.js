@@ -18,7 +18,7 @@ function loadQuestionData(data) {
 
     $('#answers').html('');
     for (const key in unparsed_answers) {
-        const new_button = $('<a class="btn btn-primary" href="#" data-id="' + key + '">' + unparsed_answers[key] + '</a>');
+        const new_button = $('<a class="btn btn-primary btn-block mx-0" href="#" data-id="' + key + '">' + unparsed_answers[key] + '</a>');
         new_button.click(sendAnswer);
         $('#answers').append(new_button);
     }
