@@ -16,5 +16,17 @@ $ source mh/bin/activate
 Install dependencies 
 
 ```
-(mh) $ pip install -r requirements.txt
+(mh) pip install -r requirements.txt
+```
+
+Create the database
+
+```
+(mh) ./manage.py migrate
+```
+
+Load questions and answers into the database
+
+```
+(mh) ./manage.py loaddata questions.json
 ```

@@ -1,3 +1,4 @@
 mh/*
 *.pyc
 .vscode
+*.sqlite3
