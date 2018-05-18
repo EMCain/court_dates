@@ -1,0 +1,73 @@
+[
+{
+  "model": "api.question",
+  "pk": 1,
+  "fields": {
+    "text": "Do you speak English?"
+  }
+},
+{
+  "model": "api.question",
+  "pk": 2,
+  "fields": {
+    "text": "Call {} for an interpeter."
+  }
+},
+{
+  "model": "api.question",
+  "pk": 3,
+  "fields": {
+    "text": "Do you know the day and time you need to appear in court?"
+  }
+},
+{
+  "model": "api.question",
+  "pk": 4,
+  "fields": {
+    "text": "Call {} to find out your court date."
+  }
+},
+{
+  "model": "api.question",
+  "pk": 5,
+  "fields": {
+    "text": "How will you be getting to court?"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 1,
+  "fields": {
+    "question": 1,
+    "text": "yes",
+    "next_question": 3
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 2,
+  "fields": {
+    "question": 1,
+    "text": "no",
+    "next_question": 2
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 3,
+  "fields": {
+    "question": 3,
+    "text": "yes",
+    "next_question": 5
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 4,
+  "fields": {
+    "question": 3,
+    "text": "no",
+    "next_question": 4
+  }
+}
+]

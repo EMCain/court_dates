@@ -8,14 +8,17 @@ from .models import Answer, Question
 
 def ask_question(request, question_id):
     # TODO look up info 
+    question = get_object_or_404(Question, id=question_id)
+
     data = json.dumps({
-        'question': 'this will be question text',
-        'answers': ['yes', 'no']
+        'question': question.text,
+        'answers': {a.id: a.text for a in question.answers.all()}
     })
     return HttpResponse(data)
 
 def answer_question(request, question_id, answer_id):
     # TODO specify POST???
+    # if there's a post this can be stateful (answers assigned to user) 
 
     current_question = get_object_or_404(Question, id=question_id)
     answer = get_object_or_404(Answer, id=answer_id)
