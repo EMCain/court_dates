@@ -24,7 +24,7 @@
   "model": "api.question",
   "pk": 4,
   "fields": {
-    "text": "Call 503-988-3957 to find out your court date."
+    "text": "Call 503-988-3957 or go to <a href=\"https://publicaccess.courts.oregon.gov/PublicAccess/Search.aspx\">this website</a> to find out your court date."
   }
 },
 {
