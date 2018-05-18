@@ -8,17 +8,17 @@ class Question(models.Model):
     def ask(self):
         return {
             'text': self.text,
-            'options': [response.text for response in self.responses.all()]
+            'options': [answer.text for answer in self.answers.all()]
         }
 
-    def answer(self, response):
-        if response in self.responses.all(): 
-            return response.next_question
+    def respond(self, answer):
+        if answer in self.answers.all(): 
+            return answer.next_question
         else:
-            raise ValueError('response does not belong to this question')
+            raise ValueError('answer does not belong to this question')
     
 
-class Response(models.Model):
-    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='responses')
+class Answer(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='answers')
     text = models.TextField(max_length=255)
-    next_question = models.ForeignKey(Question, null=True, on_delete=models.CASCADE, related_name='parent_responses')
+    next_question = models.ForeignKey(Question, null=True, on_delete=models.CASCADE, related_name='parent_answers')
