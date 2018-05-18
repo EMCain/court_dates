@@ -11,10 +11,43 @@ and open the template in the editor.
     margin: 5px 20px 5px 20px;
 }
 
+.card {
+    margin-top: 32px;
+}
+
 .column {
     margin: auto;
 }
 
+.container {
+    background-color: #fff;
+    //background-image: url(../img/portland.jpg);
+    //background-size: 100% 100%;
+}
+
+#footer_text {
+    margin: auto;
+    position: absolute;
+    font-size: 0.7em;
+    text-align: center;
+    bottom: 0;
+}
+
+#header_one {
+    margin-top: 8px;
+    color: #fff;
+}
+
+.jumbotron {
+    background-color: #117e47;
+    background-size: cover;
+    margin-bottom: 0px;
+}
+
 #logo {
-    max-width: 400px;
+    margin: auto;
+}
+
+#sub_header_one {
+    color: #fff;
 }
