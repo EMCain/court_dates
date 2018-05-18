@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : May 18, 2018, 12:01:15 PM
     Author     : Marc
 */
+<<<<<<< HEAD
 .btn{
     margin: 5px 20px 5px 20px;
 }
@@ -15,3 +16,8 @@ and open the template in the editor.
     margin: auto;
 }
 
+=======
+.column {
+    margin: auto;
+}
+>>>>>>> 0c28776... moved files and changed gitignore

@@ -12,10 +12,17 @@ var unparsed_answers = JSONmockup.answer;
 var answer_array = new Array();
 
 for (var key in unparsed_answers) {
+<<<<<<< HEAD
     answer_array.push('<a class="btn btn-primary" href="#" data-id="' + key + '">' + unparsed_answers[key] + '</a>');
 }
 
 var answer_buttons = answer_array.join('<br>');
+=======
+    answer_array.push('<a class="btn btn-primary" href="#">' + unparsed_answers[key] + '</a>');
+}
+
+var answer_buttons = answer_array.join('')
+>>>>>>> 0c28776... moved files and changed gitignore
 
 
 
