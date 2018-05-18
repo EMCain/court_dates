@@ -84,11 +84,11 @@
 },
 {
   "model": "api.answer",
-  "pk": 3,
+  "pk": 4,
   "fields": {
-    "question": 3,
-    "text": "no",
-    "next_question": 4
+    "question": 5,
+    "text": "don't know",
+    "next_question": 8
   }
 },
 {
@@ -111,11 +111,11 @@
 },
 {
   "model": "api.answer",
-  "pk": 4,
+  "pk": 7,
   "fields": {
-    "question": 5,
-    "text": "don't know",
-    "next_question": 8
+    "question": 3,
+    "text": "no",
+    "next_question": 4
   }
 }
 ]
